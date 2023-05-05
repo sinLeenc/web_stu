@@ -1,0 +1,47 @@
+
+/*类选择器*/
+.xx{
+    /*
+        xx 和 cc color 重复，下面会覆盖上面的
+        使用！important就不会被下面的覆盖住了 （不常用）
+    */
+    color: green !important;
+    border: 1px solid red;
+}
+.cc{
+    color: red;
+    font-size: 28px;
+}
+
+/*id选择器*/
+#cd{
+    color: #969696;
+}
+
+/*标签选择器*/
+li{
+    color: blue;
+}
+
+/*属性选择器*/
+input[type="text"]{
+    border: 1px solid red;
+}
+
+.c1[xx="123"]{
+    color: gold;
+}
+
+
+/*后代选择器*/
+
+/*后代所有a标签*/
+ul a{
+    color: burlywood;
+}
+
+/*ul下一级a标签*/
+ul>a{
+    color: burlywood;
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <!--    引入css文件     -->
+    <link rel="stylesheet" href="/static/commons.css">
+    <style>
+        .c1{
+            color: red;
+        }
+
+        .c2{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<h2 class="c1">用户登录</h2>
+<div>
+    <form action="/login" method="post">
+
+        <div class="c2">
+            用户名: <input type="text" name="username">
+        </div>
+
+        <div class="c2">
+            密码: <input type="password" name="userpwd">
+        </div>
+
+    </form>
+    <div>
+        <input type="submit" value="登录">
+        <a href="/register" style="color: blue">注册</a>
+    </div>
+
+
+    <div>
+        <ul>
+            <a href="" class="xx cc">一周</a>
+            <li>
+                星期一
+                <a href="">周一</a>
+            </li>
+            <li>
+                星期二
+                <a href="">周二</a>
+            </li>
+            <li>
+                星期三
+            <a href="">周三</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS样式</title>
+  <style>
+
+    .c1{
+        height: 90px;
+        width: 320px;
+        border: 1px solid red;
+        padding-top: 20px;/* 内边距 */
+        padding-left: 20px;
+        /* padding 20px 10px 30px 10px */
+        background-color: bisque;
+        margin: 20px;   /* 与内边距用法相同*/
+    }
+    .c2{
+        height: 180px;
+        width: 50%;
+    }
+    .c3{
+        height: 100px;
+        width: 200px;
+        border: 1px solid red;
+    }
+    .c4{
+        height: 100px;
+        width: 200px;
+        border: 1px solid red;
+    }
+    .h1s{
+        text-align: center;     /*水平方向居中*/
+        line-height: 59px;      /*垂直方向居中*/
+    }
+
+    .item{
+        float: left;
+        width: 280px;
+        height: 170px;
+        border: 1px solid red;
+        text-align: center;
+        line-height: 160px;
+        background-color: goldenrod;
+    }
+
+  </style>
+</head>
+<body>
+<!--水平居中-->
+<h1 class="h1s">CSS样式</h1>
+
+<div class="c1">学习css样式</div>
+
+<span class="c3" style="display: block; color: red; font-size: 38px; font-weight: 100">星期一</span>
+<span class="c3" style="font-family: 'Microsoft JhengHei'; font-weight: 600; font-size: 38px" >星期二</span>
+<div class="c4" style="display: inline-block"> 星期五</div>
+<div class="c4" style="display: inline"> 星期六</div>
+
+<div>一般使用 “块级 + 块级&行内” </div>
+
+<div>
+    <span>左边</span>
+    <!--    浮动-->
+    <span style="float: right">右边</span>
+</div>
+
+<div style="background-color: blue">
+    <div class="item">左边</div>
+    <div class="item" style="float: right">右边</div>
+    <div style="clear: both"></div>
+</div>
+
+
+</body>
+</html>
